@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    outline: none;
+    font-family: fantasy;
+}
+body{
+    background-color: rgb(49, 23, 75);
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    width: 100%;
+    background-color: rgb(19, 133, 133);
+    padding: 40px;
+    padding-left: 16px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 2px (aqua);
+}
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: darkorchid;
+}
+.wrapper .input_field{
+    margin-bottom: 10px;
+}
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+.wrapper textarea{
+    height: 80px;
+    resize: none;
+
+}
+.wrapper .btn input[type="submit"]{
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: rgb(49, 23, 75);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.wrapper #error_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    margin-left: 17px;
+    background-color: red;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+
+}
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        width: 70%;
+    }
+  }
